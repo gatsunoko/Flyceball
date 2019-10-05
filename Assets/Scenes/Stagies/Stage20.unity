@@ -355,6 +355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4daa19c3434f66b4992b0c157547c5ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  left: 1
   time: 3
 --- !u!1001 &229343748
 PrefabInstance:
@@ -598,12 +599,12 @@ PrefabInstance:
     - target: {fileID: 255088914941375310, guid: 796b0754d78266948b355fdbb676c4dc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 72.57
+      value: 78.55
       objectReference: {fileID: 0}
     - target: {fileID: 255088914941375310, guid: 796b0754d78266948b355fdbb676c4dc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -39.21
+      value: -39.99
       objectReference: {fileID: 0}
     - target: {fileID: 255088914941375310, guid: 796b0754d78266948b355fdbb676c4dc,
         type: 3}
@@ -649,6 +650,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 255088914941375310, guid: 796b0754d78266948b355fdbb676c4dc,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 255088914941375310, guid: 796b0754d78266948b355fdbb676c4dc,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 796b0754d78266948b355fdbb676c4dc, type: 3}
@@ -904,12 +915,12 @@ PrefabInstance:
     - target: {fileID: 255088914941375310, guid: 796b0754d78266948b355fdbb676c4dc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 61.19
+      value: 55.22
       objectReference: {fileID: 0}
     - target: {fileID: 255088914941375310, guid: 796b0754d78266948b355fdbb676c4dc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -42.15
+      value: -41.84
       objectReference: {fileID: 0}
     - target: {fileID: 255088914941375310, guid: 796b0754d78266948b355fdbb676c4dc,
         type: 3}
@@ -983,7 +994,7 @@ PrefabInstance:
     - target: {fileID: 3067760634936083647, guid: 0512bd21fbd45b54394052a27939d272,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.05
+      value: 69.68
       objectReference: {fileID: 0}
     - target: {fileID: 3067760634936083647, guid: 0512bd21fbd45b54394052a27939d272,
         type: 3}
@@ -1447,11 +1458,16 @@ MonoBehaviour:
   destination:
   - {x: 78.55, y: -44.21, z: 0}
   - {x: 54.81, y: -44.21, z: 0}
-  - {x: 72.57, y: -39.21, z: 0}
+  - {x: 54.81, y: -39.99, z: 0}
+  - {x: 78.55, y: -39.99, z: 0}
   time:
   - 2
+  - 1
   - 2
-  - 2
+  - 1
+  defaultPosition: {x: 0, y: 0, z: 0}
+  constantSpeed: 0
+  constantSpeedTime: 6
 --- !u!1001 &1409082251
 PrefabInstance:
   m_ObjectHideFlags: 0
