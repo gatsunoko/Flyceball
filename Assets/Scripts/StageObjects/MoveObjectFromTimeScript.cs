@@ -11,7 +11,7 @@ public class MoveObjectFromTimeScript : MonoBehaviour {
   private Vector3 startPosition;
   [System.NonSerialized]
   public bool reseted = false;
-  public Vector3 defaultPosition;
+  Vector3 defaultPosition;
   public bool constantSpeed = false;
   public float constantSpeedTime = 3.0f;
 

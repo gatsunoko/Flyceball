@@ -1465,8 +1465,7 @@ MonoBehaviour:
   - 1
   - 2
   - 1
-  defaultPosition: {x: 0, y: 0, z: 0}
-  constantSpeed: 0
+  constantSpeed: 1
   constantSpeedTime: 6
 --- !u!1001 &1409082251
 PrefabInstance:
