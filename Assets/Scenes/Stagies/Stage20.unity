@@ -1460,11 +1460,7 @@ MonoBehaviour:
   - {x: 54.81, y: -44.21, z: 0}
   - {x: 54.81, y: -39.99, z: 0}
   - {x: 78.55, y: -39.99, z: 0}
-  time:
-  - 2
-  - 1
-  - 2
-  - 1
+  time: []
   constantSpeed: 1
   constantSpeedTime: 6
 --- !u!1001 &1409082251

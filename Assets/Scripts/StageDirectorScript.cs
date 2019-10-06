@@ -15,5 +15,9 @@ public class StageDirectorScript : MonoBehaviour {
         SceneManager.LoadScene("StageSelect");
       }
     }
+    //R押したらリセット
+    if (Input.GetKey(KeyCode.R)) {
+      SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
   }
 }
