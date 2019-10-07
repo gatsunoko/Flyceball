@@ -18,6 +18,10 @@ public class GameControllerScript : MonoBehaviour {
       if (this.deathAfterTime >= 2.5f) {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
       }
+      //画面クリックしたらリセット
+      if (Input.GetMouseButtonDown(0)) {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+      }
     }
   }
 }

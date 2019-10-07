@@ -737,6 +737,7 @@ GameObject:
   - component: {fileID: 577697267}
   - component: {fileID: 577697266}
   - component: {fileID: 577697265}
+  - component: {fileID: 577697270}
   m_Layer: 10
   m_Name: MovingEnemy (3)
   m_TagString: Enemy
@@ -855,12 +856,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 577697264}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 49.403, y: -48.13, z: 184.75}
+  m_LocalPosition: {x: 49.5, y: -48.25, z: 184.75}
   m_LocalScale: {x: 10.325282, y: 6.5832086, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &577697270
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577697264}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0f278e257abe28140971d0c3b254ba35, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &637492896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1526,6 +1546,7 @@ GameObject:
   - component: {fileID: 1160833955}
   - component: {fileID: 1160833954}
   - component: {fileID: 1160833953}
+  - component: {fileID: 1160833958}
   m_Layer: 10
   m_Name: MovingEnemy (2)
   m_TagString: Enemy
@@ -1644,12 +1665,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160833952}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 39.038, y: -36.04, z: 184.75}
+  m_LocalPosition: {x: 39.135, y: -36.16, z: 184.75}
   m_LocalScale: {x: 10.064212, y: 6.5832086, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1160833958
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160833952}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0f278e257abe28140971d0c3b254ba35, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1252991898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2098,6 +2138,7 @@ GameObject:
   - component: {fileID: 1399868340}
   - component: {fileID: 1399868339}
   - component: {fileID: 1399868338}
+  - component: {fileID: 1399868343}
   m_Layer: 10
   m_Name: MovingEnemy (1)
   m_TagString: Enemy
@@ -2216,12 +2257,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1399868337}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.517, y: -46.895, z: 184.75}
+  m_LocalPosition: {x: 25.614, y: -47.015, z: 184.75}
   m_LocalScale: {x: 6.692671, y: 6.5832086, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1399868343
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399868337}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0f278e257abe28140971d0c3b254ba35, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1440047703
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2768,6 +2828,7 @@ GameObject:
   - component: {fileID: 1840219909}
   - component: {fileID: 1840219908}
   - component: {fileID: 1840219907}
+  - component: {fileID: 1840219912}
   m_Layer: 10
   m_Name: MovingEnemy
   m_TagString: Enemy
@@ -2886,12 +2947,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840219906}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.612, y: -36.84, z: 184.75}
+  m_LocalPosition: {x: 18.709, y: -36.96, z: 184.75}
   m_LocalScale: {x: 7.0675645, y: 6.5832086, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1840219912
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840219906}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0f278e257abe28140971d0c3b254ba35, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1869954343
 PrefabInstance:
   m_ObjectHideFlags: 0
