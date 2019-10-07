@@ -9,6 +9,7 @@ public class MoveControlScript : MonoBehaviour {
   public GameObject[] controleObjects;
   List<MoveObjectFromTimeScript> moveObjectScripts = new List<MoveObjectFromTimeScript>();
   List<KurukuruFromTimeScript> kurukuruScripts = new List<KurukuruFromTimeScript>();
+  List<ScaleChangeScript> scaleChangeScripts = new List<ScaleChangeScript>();
 
   void Start() {
     foreach (GameObject controleObject in controleObjects) {
@@ -17,6 +18,9 @@ public class MoveControlScript : MonoBehaviour {
       }
       if (controleObject.GetComponent<KurukuruFromTimeScript>()) {
         kurukuruScripts.Add(controleObject.GetComponent<KurukuruFromTimeScript>());
+      }
+      if (controleObject.GetComponent<ScaleChangeScript>()) {
+        scaleChangeScripts.Add(controleObject.GetComponent<ScaleChangeScript>());
       }
     }
   }
@@ -30,6 +34,9 @@ public class MoveControlScript : MonoBehaviour {
       }
       foreach(KurukuruFromTimeScript kurukuruScript in kurukuruScripts) {
         kurukuruScript.reseted = true;
+      }
+      foreach (ScaleChangeScript scaleChangeScript in scaleChangeScripts) {
+        scaleChangeScript.reseted = true;
       }
     }
   }

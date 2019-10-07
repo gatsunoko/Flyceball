@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 7368264214898578844}
   - component: {fileID: 5429560461416339801}
   - component: {fileID: 2850893999297256089}
+  - component: {fileID: 7493901904774773497}
   m_Layer: 10
-  m_Name: MovingEnemy
+  m_Name: MovingGeneraterChildEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -136,3 +137,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de65da85c7f3565428208797449368d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &7493901904774773497
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4271118061538333263}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0f278e257abe28140971d0c3b254ba35, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
