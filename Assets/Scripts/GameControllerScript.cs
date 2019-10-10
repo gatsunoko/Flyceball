@@ -19,7 +19,7 @@ public class GameControllerScript : MonoBehaviour {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
       }
       //画面クリックしたらリセット
-      if (Input.GetMouseButtonDown(0)) {
+      if (Input.GetMouseButtonUp(0)) {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
       }
     }
