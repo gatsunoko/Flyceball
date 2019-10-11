@@ -8,7 +8,7 @@ public class StageSelectContollerScript : MonoBehaviour {
 
   void Start() {
     //1,2,3は最初から解放
-    for(int i = 1; i <= 3; i++) {
+    for (int i = 1; i <= 3; i++) {
       string stage = "Stage" + i.ToString();
       if (PlayerPrefs.GetInt(stage) < 1) {
         PlayerPrefs.SetInt(stage, 1);

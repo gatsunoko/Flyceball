@@ -214,7 +214,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429086800}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e2f2741e09775440b0f070e0bfb80cd, type: 3}
   m_Name: 
@@ -7140,8 +7140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db587ff48af5713449cfaee2edb8f6df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 27
-  myEnabled: 0
+  number: 28
+  myEnabled: 1
 --- !u!114 &7814448383910122383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7230,7 +7230,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bbffc63baca6d00448b00b68acd33f15, type: 3}
-  m_Color: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7594,7 +7594,7 @@ TextMesh:
   m_Font: {fileID: 0}
   m_Color:
     serializedVersion: 2
-    rgba: 4285822068
+    rgba: 4294967295
 --- !u!23 &7814448384980807316
 MeshRenderer:
   m_ObjectHideFlags: 0
