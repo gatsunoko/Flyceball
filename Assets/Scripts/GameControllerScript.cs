@@ -7,6 +7,7 @@ public class GameControllerScript : MonoBehaviour {
 
   PlayerScript playerScript;
   float deathAfterTime = 0;
+  public bool saveEnabled = false;
 
   void Start() {
     this.playerScript = PlayerScript.playerScript;
