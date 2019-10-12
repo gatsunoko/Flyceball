@@ -63,9 +63,6 @@ public class PlayerScript : MonoBehaviour {
     }
     //クリアしていたら右に移動する
     if (this.stageDirectorScript.clear) {
-      //this.rigid2d.bodyType = RigidbodyType2D.Kinematic;
-      //this.rigid2d.velocity = new Vector2(0, 0);
-      //transform.rotation = Quaternion.Euler(0, 0, 0);
       this.polygonCollider.isTrigger = true;
       this.rigid2d.velocity = new Vector2(5.0f, 0);
     }
@@ -79,16 +76,4 @@ public class PlayerScript : MonoBehaviour {
       this.clicked = false;
     }
   }
-
-  //private void OnCollisionStay2D(Collision2D col) {
-  //  if (col.gameObject.tag == "Ground") {
-  //    this.grounded = true;
-  //  }
-  //}
-
-  //private void OnCollisionExit2D(Collision2D col) {
-  //  if (col.gameObject.tag == "Ground") {
-  //    this.grounded = false;
-  //  }
-  //}
 }
