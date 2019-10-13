@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8661462078527600657}
   - component: {fileID: 8661462078527600658}
   - component: {fileID: 8661462078527600660}
+  - component: {fileID: 7398487761668018111}
   m_Layer: 0
   m_Name: BackGroundCamera
   m_TagString: Untagged
@@ -89,3 +90,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spritePositionStart: {x: 13.91, y: -16.28, z: 0}
   spritePositionEnd: {x: 33.49, y: -16.28, z: 0}
+--- !u!114 &7398487761668018111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8661462078527600661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2883b953d38100543aed3458747b32b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

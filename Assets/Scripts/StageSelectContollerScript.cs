@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class StageSelectContollerScript : MonoBehaviour {
 
+  public GameObject check;
   public GameObject[] stageObjects;
 
   void Start() {
@@ -21,11 +22,13 @@ public class StageSelectContollerScript : MonoBehaviour {
       if (PlayerPrefs.HasKey(stage)) {
         stageClear = PlayerPrefs.GetInt(stage);
         if (stageClear == 2) {
-          stageObjects[i - 1].GetComponent<SpriteRenderer>().color = new Color(0.08018869f, 0.1424914f, 1.0f);
+          stageObjects[i - 1].GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f);
           stageObjects[i - 1].GetComponent<StageSelectScript>().myEnabled = true;
           foreach (Transform childObject in stageObjects[i - 1].transform) {
-            childObject.gameObject.GetComponent<TextMesh>().color = new Color(0.08018869f, 0.1424914f, 1.0f);
-          }          
+            childObject.gameObject.GetComponent<TextMesh>().color = new Color(1.0f, 1.0f, 1.0f);
+          }
+          GameObject checkInstance = Instantiate(check) as GameObject;
+          checkInstance.transform.position = stageObjects[i - 1].transform.position;
         }
         else {
           stageObjects[i - 1].GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f);
