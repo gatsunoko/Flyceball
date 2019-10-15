@@ -8,8 +8,10 @@ public class CameraSwipeScript : MonoBehaviour {
   Vector3 end;
   Vector3 startPosition;
   float deltaX = 0f;
-  float maxY = 0.2500001f;
+  float maxY = 0.25f;
   float minY = -10.55f;
+  public GameObject upArrow;
+  public GameObject downArrow;
 
   void Update() {
     if (Input.GetMouseButtonDown(0)) {
@@ -22,6 +24,18 @@ public class CameraSwipeScript : MonoBehaviour {
       deltaX = deltaX * 0.025f;
       float cameraY = Mathf.Clamp(startPosition.y + deltaX, minY, maxY);
       transform.position = new Vector3(startPosition.x, cameraY, startPosition.z);
+    }
+    if (transform.position.y < maxY) {
+      upArrow.SetActive(true);
+    }
+    else {
+      upArrow.SetActive(false);
+    }
+    if (transform.position.y > minY) {
+      downArrow.SetActive(true);
+    }
+    else {
+      downArrow.SetActive(false);
     }
   }
 }
