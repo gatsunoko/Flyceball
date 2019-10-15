@@ -7,10 +7,25 @@ public class StageSelectScript : MonoBehaviour {
 
   public string number = "1";
   public bool myEnabled = true;
+  public GameObject mainCamera;
+  public GameObject stageSelectController;
+  StageSelectContollerScript stageSelectControllerScript;
 
-  public void onClickAct() {
-    if (myEnabled) {
-      SceneManager.LoadScene("stage" + number);
+  private void Start() {
+    stageSelectControllerScript = stageSelectController.GetComponent<StageSelectContollerScript>();
+  }
+
+  public void OnClickStart() {
+    stageSelectControllerScript.cameraPosition = mainCamera.transform.position;
+    stageSelectControllerScript.inputPosition = Input.mousePosition;
+  }
+
+  public void OnClickEnd() {
+    if (stageSelectControllerScript.cameraPosition == mainCamera.transform.position &&
+        stageSelectControllerScript.inputPosition == Input.mousePosition) {
+      if (myEnabled) {
+        SceneManager.LoadScene("stage" + number);
+      }
     }
   }
 }

@@ -23,7 +23,7 @@ public class StartPointControllerScript : MonoBehaviour {
   void SceneLoaded(Scene nextScene, LoadSceneMode mode) {
     //プレイヤーを初期位置へ
     if (nextScene.name != "StageSelect" &&
-        GameObject.FindGameObjectWithTag("GameController").GetComponent<GameControllerScript>().saveEnabled) {
+      GameObject.FindGameObjectWithTag("GameController").GetComponent<GameControllerScript>().saveEnabled) {
       GameObject player = GameObject.FindGameObjectWithTag("Player");
       player.transform.position = startPoint;
     }

@@ -6,6 +6,10 @@ public class StageSelectContollerScript : MonoBehaviour {
 
   public GameObject check;
   public GameObject[] stageObjects;
+  //ステージ選択のクリック時にスワイプしてたらステージ選択クリックが発動しない為の
+  [System.NonSerialized]
+  public Vector3 cameraPosition;
+  public Vector3 inputPosition;
 
   void Start() {
     //1,2,3は最初から解放
