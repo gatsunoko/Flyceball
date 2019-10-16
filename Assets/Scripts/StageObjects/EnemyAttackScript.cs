@@ -12,7 +12,7 @@ public class EnemyAttackScript : MonoBehaviour {
 
   private void OnCollisionEnter2D(Collision2D col) {
     if (col.gameObject.tag == "Player") {
-      this.playerScript.dead = true;
+      //this.playerScript.dead = true;
     }
   }
 }
