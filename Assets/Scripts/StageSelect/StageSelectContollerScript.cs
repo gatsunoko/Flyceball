@@ -30,29 +30,18 @@ public class StageSelectContollerScript : MonoBehaviour {
       if (PlayerPrefs.HasKey(stage)) {
         stageClear = PlayerPrefs.GetInt(stage);
         if (stageClear == 2) {
-          stageObjects[i - 1].GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f);
-          stageObjects[i - 1].GetComponent<StageSelectScript>().myEnabled = true;
-          foreach (Transform childObject in stageObjects[i - 1].transform) {
-            childObject.gameObject.GetComponent<TextMesh>().color = new Color(1.0f, 1.0f, 1.0f);
-          }
+          StageButtonChange(i, true, 1.0f);
+          //クリアした場所にはチェックボタンをつける
           GameObject checkInstance = Instantiate(check) as GameObject;
           checkInstance.transform.position = stageObjects[i - 1].transform.position;
         }
         else {
-          stageObjects[i - 1].GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f);
-          stageObjects[i - 1].GetComponent<StageSelectScript>().myEnabled = true;
-          foreach (Transform childObject in stageObjects[i - 1].transform) {
-            childObject.gameObject.GetComponent<TextMesh>().color = new Color(1.0f, 1.0f, 1.0f);
-          }
+          StageButtonChange(i, true, 1.0f);
           clear = false;
         }
       }
       else {
-        stageObjects[i - 1].GetComponent<SpriteRenderer>().color = new Color(0.5f, 0.5f, 0.5f);
-          stageObjects[i - 1].GetComponent<StageSelectScript>().myEnabled = false;
-        foreach (Transform childObject in stageObjects[i - 1].transform) {
-          childObject.gameObject.GetComponent<TextMesh>().color = new Color(0.5f, 0.5f, 0.5f);
-        }
+        StageButtonChange(i, false, 0.5f);
         clear = false;
       }
     }
@@ -63,6 +52,14 @@ public class StageSelectContollerScript : MonoBehaviour {
     else {
       titleText.SetActive(true);
       titleTextClear.SetActive(false);
+    }
+  }
+
+  void StageButtonChange(int number, bool enabled, float color) {
+    stageObjects[number - 1].GetComponent<SpriteRenderer>().color = new Color(color, color, color);
+    stageObjects[number - 1].GetComponent<StageSelectScript>().myEnabled = enabled;
+    foreach (Transform childObject in stageObjects[number - 1].transform) {
+      childObject.gameObject.GetComponent<TextMesh>().color = new Color(color, color, color);
     }
   }
 }
