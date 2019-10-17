@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Enemy
   - StartPointController
+  - AdController
   layers:
   - Default
   - TransparentFX
