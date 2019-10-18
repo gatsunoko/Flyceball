@@ -17,7 +17,7 @@ public class GameControllerScript : MonoBehaviour {
 
   void Update() {
     if (this.playerScript.dead) {
-      if (Advertisement.IsReady() && AdControllerScript.Instance.adIntervalTime >= 300.0f) {
+      if (Advertisement.IsReady() && AdControllerScript.Instance.adIntervalTime >= 600.0f) {
         this.adBeforeTime += Time.deltaTime;
         if (this.adBeforeTime >= 1.0f) {
           if (GameObject.Find("StageUI")) {
