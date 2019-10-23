@@ -69,7 +69,7 @@ public class PlayerScript : MonoBehaviour {
   }
 
   void Update() {
-    if (Input.GetMouseButton(0)) {
+    if (Input.GetMouseButton(0) || Input.GetKey(KeyCode.Space)){
       this.clicked = true;
     }
     else {
