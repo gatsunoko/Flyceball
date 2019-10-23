@@ -31,6 +31,8 @@ public class StageSelectScript : MonoBehaviour {
     if (CameraDistanceX < 20.0f && CameraDistanceY < 20.0f &&
         distanceX < 35.0f && distanceY < 35.0f) {
       if (myEnabled) {
+        PlayerPrefs.SetFloat("cameraX", mainCamera.transform.position.x);
+        PlayerPrefs.SetFloat("cameraY", mainCamera.transform.position.y);
         SceneManager.LoadScene("stage" + number);
       }
     }

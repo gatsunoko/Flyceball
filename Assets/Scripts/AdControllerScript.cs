@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AdControllerScript : SingletonMonoBehaviourFast<AdControllerScript> {
 
-  public float adIntervalTime = 0;
+  public float adIntervalTime = 300.0f;
 
   void Start() {
     DontDestroyOnLoad(this);

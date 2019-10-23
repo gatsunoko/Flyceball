@@ -13,6 +13,12 @@ public class CameraSwipeScript : MonoBehaviour {
   public GameObject upArrow;
   public GameObject downArrow;
 
+  private void Start() {
+    if (PlayerPrefs.HasKey("cameraX") && PlayerPrefs.HasKey("cameraY")) {
+      transform.position = new Vector3(PlayerPrefs.GetFloat("cameraX"), PlayerPrefs.GetFloat("cameraY"), -10.0f);
+    }
+  }
+
   void Update() {
     if (Input.GetMouseButtonDown(0)) {
       start = Input.mousePosition;

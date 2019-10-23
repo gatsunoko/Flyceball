@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Advertisements;
 
-public class GameControllerScript : MonoBehaviour {
+public class GameControllerScript : MonoBehaviour
+{
 
   PlayerScript playerScript;
   float deathAfterTime = 0;
