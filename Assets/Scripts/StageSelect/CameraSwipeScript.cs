@@ -17,8 +17,8 @@ public class CameraSwipeScript : MonoBehaviour {
   public float speed = 1f;
 
   private void Start() {
-    if (PlayerPrefs.HasKey("cameraX") && PlayerPrefs.HasKey("cameraY")) {
-      transform.position = new Vector3(PlayerPrefs.GetFloat("cameraX"), PlayerPrefs.GetFloat("cameraY"), -10.0f);
+    if (PlayerPrefs.HasKey("cameraY")) {
+      transform.position = new Vector3(9.91f, PlayerPrefs.GetFloat("cameraY"), -10.0f);
     }
   }
 
