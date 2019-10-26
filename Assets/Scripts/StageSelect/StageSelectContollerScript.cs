@@ -16,7 +16,6 @@ public class StageSelectContollerScript : MonoBehaviour {
   bool clear = true;
 
   void Start() {
-    Screen.SetResolution(800, 480, false, 60);
     //1,2,3は最初から解放
     for (int i = 1; i <= 3; i++) {
       string stage = "Stage" + i.ToString();
