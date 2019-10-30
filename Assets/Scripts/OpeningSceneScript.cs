@@ -7,13 +7,12 @@ public class OpeningSceneScript : MonoBehaviour {
 
   public GameObject text;
   float time = 0;
-   AudioSource openingSE;
-  bool alreadySE = false;
+  AudioSource openingSE;
 
   private void Start() {
     text.transform.position = new Vector2(0.28f, 0.07f);
     openingSE = GetComponent<AudioSource>();
-     openingSE.PlayOneShot(openingSE.clip);
+    openingSE.PlayOneShot(openingSE.clip);
   }
 
   void Update() {
@@ -25,9 +24,5 @@ public class OpeningSceneScript : MonoBehaviour {
     if (time >= 1.0f && text.transform.position.y < 3.44f) {
       text.transform.Translate(new Vector2(0, 0.1f));
     }
-    //else if (!alreadySE) {
-    //  alreadySE = true;
-    //  openingSE.PlayOneShot(openingSE.clip);
-    //}
   }
 }

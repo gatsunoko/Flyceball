@@ -29,7 +29,7 @@ public class CameraSwipeScript : MonoBehaviour {
       deltaX = (start - end).y;
       deltaX = deltaX * 0.025f;
       float cameraY = Mathf.Clamp(startPosition.y + deltaX, minY, maxY);
-      transform.position = new Vector3(startPosition.x, cameraY, startPosition.z);
+      transform.position = new Vector3(9.91f, cameraY, -10.0f);
     }
     if (transform.position.y < maxY) {
       upArrow.SetActive(true);
