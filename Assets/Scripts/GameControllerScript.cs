@@ -8,6 +8,7 @@ public class GameControllerScript : MonoBehaviour {
   PlayerScript playerScript;
   float deathAfterTime = 0;
   public bool saveEnabled = false;
+  bool resetButton = false;
 
   void Start() {
     this.playerScript = PlayerScript.playerScript;
@@ -20,7 +21,10 @@ public class GameControllerScript : MonoBehaviour {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
       }
       //画面クリックしたらリセット
-      if (Input.GetMouseButtonUp(0)) {
+      if (Input.GetMouseButtonDown(0)) {
+        resetButton = true;
+      }
+      if (Input.GetMouseButtonUp(0) && resetButton) {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
       }
     }
