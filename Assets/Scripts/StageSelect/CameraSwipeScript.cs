@@ -9,13 +9,13 @@ public class CameraSwipeScript : MonoBehaviour {
   Vector3 startPosition;
   float deltaX = 0f;
   float maxY = 0.25f;
-  float minY = -10.55f;
+  float minY = -16.04f;
   public GameObject upArrow;
   public GameObject downArrow;
 
   private void Start() {
-    if (PlayerPrefs.HasKey("cameraX") && PlayerPrefs.HasKey("cameraY")) {
-      transform.position = new Vector3(PlayerPrefs.GetFloat("cameraX"), PlayerPrefs.GetFloat("cameraY"), -10.0f);
+    if (PlayerPrefs.HasKey("cameraY")) {
+      transform.position = new Vector3(9.91f, PlayerPrefs.GetFloat("cameraY"), -10.0f);
     }
   }
 
