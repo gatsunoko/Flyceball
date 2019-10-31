@@ -9,7 +9,7 @@ public class CameraSwipeScript : MonoBehaviour {
   Vector3 startPosition;
   float deltaX = 0f;
   float maxY = 0.25f;
-  float minY = -10.55f;
+  float minY = -16.04f;
   public GameObject upArrow;
   public GameObject downArrow;
 

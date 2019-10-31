@@ -11,6 +11,7 @@ public class GameControllerScript : MonoBehaviour
   float deathAfterTime = 0;
   public bool saveEnabled = false;
   float adBeforeTime = 0;
+  bool resetButton = false;
 
   void Start() {
     this.playerScript = PlayerScript.playerScript;
@@ -30,14 +31,16 @@ public class GameControllerScript : MonoBehaviour
         }
         return;
       }
-
       if (!Advertisement.isShowing) {
         this.deathAfterTime += Time.deltaTime;
         if (this.deathAfterTime >= 2.5f) {
           SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         //画面クリックしたらリセット
-        if (Input.GetMouseButtonUp(0)) {
+        if (Input.GetMouseButtonDown(0)) {
+          resetButton = true;
+        }
+        if (Input.GetMouseButtonUp(0) && resetButton) {
           SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
       }
